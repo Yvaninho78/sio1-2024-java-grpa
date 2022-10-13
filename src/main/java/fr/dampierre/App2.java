@@ -14,16 +14,15 @@ public static void main(String[] args) {
     while (laCase != 20) {
         // début de la partie
         laCase = 0;
+        for (int i = 1; i <= 5; i++){
         // lancer le dé 
         int lancer = generateur.nextInt(6) + 1;
         System.out.println("Vous avez fait " + lancer);
         // avancer le pion d'autant de cases
         laCase = laCase + lancer;
         System.out.println("Vous êtes à la case " + laCase);
-        // remettre la partie à zéro
-        
-
-    }
+       } 
+    
     
     if (laCase == 20) {
         System.out.println("Vous avez gagné !");
@@ -32,7 +31,7 @@ public static void main(String[] args) {
     }
  }
 
-
+}
 
 }
 
